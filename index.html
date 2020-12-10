@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b76f6be7b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tractorpool</title>
+</head>
+
+<body onresize="menjaj()">
+    <div class="modal">
+
+        <div class="modal-glavni">
+            <div class="za-dugme-izadji">
+                <i class="far fa-window-close izadji"></i>
+            </div>
+            <div>
+                <h2>REGISTRUJTE SE:</h2>
+            </div>
+            <div class="regristracija">
+                <form name="PrvaForma" onsubmit="return validacija()">
+
+                    <input type="text" class="fname" name="firstname" placeholder="Your name.." required>
+
+                    <input type="text" class="fname flast" name="lastname" placeholder="Your last name.." required>
+
+                    <input type="text" class="fname fmail" name="e-mail" placeholder="E-mail.." required>
+
+                    <input type="tel" class="fname fphone" name="Phone" placeholder="Phone number.." required>
+
+                    <input type="password" class="fname fpass" name="password" placeholder="Password.." required>
+
+                    <input type="password" class="fname fcpass" name="Confirm" placeholder="Confirm password.."
+                        required>
+
+                    <input type="submit" id="dugme" value="Potvrdi">
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="dugme-meni"><img src="img/dugmence.png" alt=""></div>
+        <div class="meni-levi glavni-levi-meni">
+            <ul class="meni-kartice ">
+                <li><a href="index.html"><b>POČETNA</b></a></li>
+                <li><a href="shop.html"><b>DUĆAN</b></a></li>
+                <li><a href="aboutus.html"><b>O NAMA</b></a></li>
+                <li><a href="kontakt.html"><b>KONTAKT</b></a></li>
+            </ul>
+        </div>
+        <div class="logo"><img src="img/logonovi211.png" alt=""></div>
+    </header>
+    <div class="media-meni" id="moj-meni">
+        <div class="meni-levi media-levi">
+            <ul class="meni-kartice">
+                <li><a href="index.html"><b>POČETNA</b></a></li>
+                <li><a href="shop.html"><b>DUĆAN</b></a></li>
+                <li><a href="aboutus.html"><b>O NAMA</b></a></li>
+                <li><a href="kontakt.html"><b>KONTAKT</b></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="pocetak" class="bg">
+        <div class="naslovni-tekst">
+            <h1>TRAKTORPOOL</h1>
+        </div>
+        <div class="naslovni-tekst naslovni-tekst2">
+            <h2>Rent-a-tractor, jedini u zemlji. <br>
+                Sa tractorpool-om za najbolje odrađen posao</h2>
+        </div>
+
+        <div class="naslovno-dugme">
+            <p>Postani traktorista</p>
+        </div>
+
+    </div>
+
+    <div class="prica-div red">
+        <div class="prica-tekst">
+            <h3>Naša priča</h3><br>
+            <p>Dobro došli na sajt kompanije Traktortool! <br>
+
+                Kompanija je nastala davne 1953. godine,a pristupačnost asortimana naših proizvoda iz godine
+                u godinu osvaja poverenje potrošača. Mi smo kompanija koja ceni tradiciju i kvalitet,i zbog toga se
+                nalazimo među vodećim kompanijama na tržištu. <br> <a href="aboutus.html">nastavak</a> …</p>
+        </div>
+    </div>
+
+    <div class="bg2">
+
+        <div id="naslov">
+            <h3>SERVISI</h3><br>
+            <p>šta mi to Vama nudimo</p>
+        </div>
+
+        <div class="prica-div servisi red">
+            <div class="servis-dete servis1">
+                <div class="servis-unuce">
+                    <div class="slika-unuce"><img src="img/ikonica.png" alt="" class="lupa"></div>
+                </div>
+                <div class="servis-unuce-tekst">
+                    <div class="servis-praunuce">
+                        <h3>Profesionalna pomoć</h3><br>
+                        <p>Iznajmite traktore i mašine koje su vam potrebne, kojima će upravljati naši profesionalci,
+                            najbolji
+                            traktoristi sveta</p>
+                    </div>
+                    <a href="">PROČITAJ VIŠE...</a>
+
+                </div>
+
+            </div>
+            <div class="servis-dete servis2">
+                <div class="servis-unuce">
+                    <div class="slika-unuce"><img src="img/ikonica.png" alt="" class="lupa"></div>
+                </div>
+                <div class="servis-unuce-tekst">
+                    <div class="servis-praunuce">
+                        <h3>Rent-a-tractor</h3><br>
+                        <p>Rentirajte najbolje traktore i sve mašine koje su vam potrebne na određen period i uradite
+                            posao kako treba</p>
+                    </div>
+                    <a href="">PROČITAJ VIŠE...</a>
+                </div>
+            </div>
+            <div class="servis-dete servis3">
+                <div class="servis-unuce">
+                    <div class="slika-unuce"><img src="img/ikonica.png" alt="" class="lupa"></div>
+                </div>
+                <div class="servis-unuce-tekst">
+                    <div class="servis-praunuce">
+                        <h3>Unajmi čoveka</h3><br>
+                        <p>Unajmite nas radi pomoći ili obavljanja profesionalog i stručnog posla na duži ili kraći
+                            vremenski period</p>
+                    </div>
+                    <a href="">PROČITAJ VIŠE...</a>
+                </div>
+            </div>
+        </div>
+        <div class="centriraj">
+            <div class="naslovno-dugme read-dugme">
+                <p>POSTANITE NAŠ ČLAN</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg2">
+
+        <div id="naslov">
+            <h3>GALERIJA</h3><br>
+            <p>naša ponuda traktora</p>
+        </div>
+        <div class="galerija red">
+            <div class="galerija-dete">
+                <img src="img/galerija10.jpg" alt="">
+                <a target="_blank" href="img/galerija10.jpg">
+                    <div class="hover-efekat">
+                        <div class="tekst">Lamborghini</div>
+                    </div>
+                </a>
+            </div>
+            <div class="galerija-dete galerija-dete1">
+                <img src="img/galerija11.jpg" alt="">
+                <a target="_blank" href="img/galerija11.jpg">
+                    <div class="hover-efekat">
+                        <div class="tekst">John Deer</div>
+                    </div>
+                </a>
+            </div>
+            <div class=" galerija-dete">
+                <img src="img/galerija12.jpg" alt="">
+                <a target="_blank" href="img/galerija12.jpg">
+                    <div class="hover-efekat">
+                        <div class="tekst">Porsche</div>
+                    </div>
+                </a>
+            </div>
+            <div class=" galerija-dete">
+                <img src="img/galerija13.jpg" alt="">
+                <a target="_blank" href="img/galerija13.jpg">
+                    <div class="hover-efekat">
+                        <div class="tekst">Claas</div>
+                    </div>
+                </a>
+            </div>
+            <div class="galerija-dete galerija-dete1">
+                <img src="img/galerija14.jpg" alt="">
+                <a target="_blank" href="img/galerija14.jpg">
+                    <div class="hover-efekat">
+                        <div class="tekst">IMT</div>
+                    </div>
+                </a>
+            </div>
+            <div class=" galerija-dete">
+                <img src="img/galerija15.jpg" alt="">
+                <a target="_blank" href="img/galerija15.jpg">
+                    <div class="hover-efekat">
+                        <div class="tekst">Ford</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg2 footer">
+        <div class="meni-footer">
+            <ul>
+                <li><a href="index.html">POČETNA</a></li>
+                <li><a href="shop.html">DUĆAN</a></li>
+                <li><a href="aboutus.html">O NAMA</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            <ul>
+                <li>(011) 555-333</li>
+                <li>traktor@polje.com</li>
+                <li>Beograd, Batajnički drum 23</li>
+            </ul>
+        </div>
+        <div class="copy-footer">
+            <img src="img/logonovi22.png" alt="">
+            <br>
+            <p>Copyright © 2020 The traktorpool. <br> All rights reserved. Privacy Policy</p>
+        </div>
+    </div>
+    <!-- ON TOP DUGME -->
+    <a id="na-pocetak" href="#pocetak">
+        <div>
+            <i class="fas fa-angle-up"></i>
+        </div>
+    </a>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

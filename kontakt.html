@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b76f6be7b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakt</title>
+</head>
+
+<body onresize="menjaj()">
+    <header class="header">
+        <div class="dugme-meni"><img src="img/dugmence.png" alt=""></div>
+        <div class="meni-levi glavni-levi-meni">
+            <ul class="meni-kartice">
+                <li><a href="index.html"><b>POČETNA</b></a></li>
+                <li><a href="shop.html"><b>DUĆAN</b></a></li>
+                <li><a href="aboutus.html"><b>O NAMA</b></a></li>
+                <li><a href="kontakt.html"><b>KONTAKT</b></a></li>
+            </ul>
+        </div>
+        <div class="logo"><img src="img/logonovi211.png" alt=""></div>
+
+    </header>
+    <div class="media-meni" id="moj-meni">
+        <div class="meni-levi media-levi">
+            <ul class="meni-kartice">
+                <li><a href="index.html"><b>POČETNA</b></a></li>
+                <li><a href="shop.html"><b>DUĆAN</b></a></li>
+                <li><a href="aboutus.html"><b>O NAMA</b></a></li>
+                <li><a href="kontakt.html"><b>KONTAKT</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="pocetak" class="bg bg4">
+        <div class="naslovni-tekst">
+            <h1>KONTAKT</h1>
+        </div>
+    </div>
+    <div class="bg bg3 red bg33">
+        <div class="nas-kontakt">
+            <h2>Treba vam pomoć?</h2>
+            <ul>
+                <li>
+                    <div class="kontakt-ikonica">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="kontakt-tekst">
+                        <h5>NAŠA KANCELARIJA</h5>
+                        <div>Batajnički drum 23</div>
+                    </div>
+                </li>
+                <li id="drugi-li">
+                    <div class="kontakt-ikonica">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="kontakt-tekst">
+                        <h5>EMAIL ADRESA</h5>
+                        <div>traktor@polje.com</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="kontakt-ikonica">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="kontakt-tekst">
+                        <h5>POZOVITE NAS</h5>
+                        <div>(011) 555-333</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-us">
+            <form name="PrvaForma" onsubmit="return validacija()">
+
+                <input type="text" class="kontakt-ime" name="firstname" placeholder="Your name..">
+
+                <input type="text" class="kontakt-ime" name="lastname" placeholder="Your last name..">
+
+                <input type="text" class="kontakt-ime" name="e-mail" placeholder="E-mail..">
+
+                <textarea type="text" name="text" class="kontakt-poruka" placeholder="Your message.."></textarea>
+
+                <input type="submit" id="kontakt-dugme" value="Potvrdi">
+            </form>
+        </div>
+        <div class="google-map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.6189755826767!2d20.34995600191727!3d44.87005107909841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a66f317d5c5b7%3A0x65a8f139c0ca3138!2z0JHQsNGC0LDRmNC90LjRh9C60Lgg0LTRgNGD0LwgMjMsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1607207824924!5m2!1ssr!2srs"
+                width="100%" height="450" style="pointer-events: auto;"></iframe></div>
+    </div>
+    <div class="bg2 footer">
+        <div class="meni-footer">
+            <ul>
+                <li><a href="index.html">POČETNA</a></li>
+                <li><a href="shop.html">DUĆAN</a></li>
+                <li><a href="aboutus.html">O NAMA</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            <ul>
+                <li>(011) 555-333</li>
+                <li>traktor@polje.com</li>
+                <li>Beograd, Batajnički drum 23</li>
+            </ul>
+        </div>
+        <div class="copy-footer">
+            <img src="img/logonovi22.png" alt="">
+            <br>
+            <p>Copyright © 2020 The traktorpool. <br> All rights reserved. Privacy Policy</p>
+        </div>
+    </div>
+
+    <!-- ON TOP DUGME -->
+    <a id="na-pocetak" href="#pocetak">
+        <div>
+            <i class="fas fa-angle-up"></i>
+        </div>
+    </a>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

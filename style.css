@@ -1,0 +1,993 @@
+body,
+html {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    height: 100%;
+    background-color: #bebaba;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 44;
+    height: 80vh;
+    background-color: transparent;
+    margin-top: 70px;
+}
+
+.modal-glavni {
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    width: 40%;
+    height: auto;
+    padding-bottom: 30px;
+    /* box-shadow: 5px 10px 8px #888888; */
+}
+
+.izadji {
+    margin: 20px;
+    z-index: 99;
+    background-color: #282727;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    /* margin: 10px 10px 0 0; */
+    padding: 10px;
+}
+
+.za-dugme-izadji {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.naziv-u-singup {
+    width: 100%;
+    text-align: center;
+}
+
+
+.regristracija {
+    width: 80%;
+}
+
+.fname {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#dugme {
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 0 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+#dugme:hover {
+    background-color: #444444;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg {
+    background-image: url("img/pozadina10.jpg");
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    z-index: 99;
+    width: 100%;
+
+    position: fixed;
+    height: 70px;
+    background-color: silver;
+    opacity: 0.8;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.dugme-meni {
+    position: absolute;
+    display: none;
+    height: auto;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 50px;
+}
+
+.dugme-meni img {
+    height: 100%;
+    width: 100%;
+}
+
+.meni-levi {
+    float: left;
+    width: 45%;
+}
+
+.meni-kartice li {
+    display: inline;
+    padding: 10px;
+    color: black;
+}
+
+.logo {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#moj-meni {
+    display: none;
+}
+
+.media-meni {
+    z-index: 33;
+    width: 100%;
+    position: fixed;
+    margin-top: 70px;
+    background-color: #dedede;
+    height: auto;
+    opacity: 0.8;
+
+}
+
+.media-levi {
+    width: 100%;
+}
+
+.media-levi li {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: block;
+}
+
+/* .header>.logo {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 50;
+    display: flex;
+    flex: 4;
+    align-items: center;
+} */
+
+
+.naslovni-tekst {
+    height: auto;
+    width: auto;
+}
+
+.naslovno-dugme {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 121, 45);
+    opacity: 0.9;
+    color: white;
+    cursor: pointer;
+    width: 225px;
+    border-radius: 20px 20px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.naslovni-tekst2 {
+    text-align: center;
+    color: white;
+}
+
+.naslovni-tekst h1 {
+    color: white;
+    margin: 0;
+    font-size: 100px;
+}
+
+.naslovni-tekst h1 {
+    margin: 0;
+
+}
+
+.meni-kartice a {
+    color: black;
+    transition: all 200ms ease-in-out;
+}
+
+.meni-kartice a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.prica-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+
+}
+
+.prica-tekst {
+    width: 40%;
+    margin: 0;
+    font-size: 20px;
+    color: rgb(53, 51, 51);
+}
+
+.prica-tekst h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.bg2 {
+    text-align: center;
+    height: auto;
+    border-bottom: 3px solid white;
+    background-color: #dedede;
+
+}
+
+#naslov {
+    padding: 5%;
+}
+
+#naslov h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#naslov p {
+    margin: 0;
+    color: #4e4b4b;
+    font-size: 15px;
+}
+
+.servisi {
+    background-color: #dedede;
+    height: auto;
+
+}
+
+.servis-dete {
+    background-color: white;
+    width: 25%;
+    height: 60vh;
+}
+
+.servis2 {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.servis-unuce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/pozadina10.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45%;
+    text-align: center;
+
+}
+
+.slika-unuce img {
+    width: 80px;
+    height: 80px;
+    transition: all 100ms ease-in-out;
+}
+
+.servis-dete:hover .lupa {
+    margin-bottom: 15px;
+}
+
+.servis-unuce-tekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(53, 51, 51);
+}
+
+.servis-unuce-tekst h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.servis-unuce-tekst p {
+    padding: 0 5px 0 5px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.servis-unuce-tekst a {
+    color: rgb(92, 92, 92);
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.centriraj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-dugme {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #a1a1a1;
+    margin-top: 50px;
+    transition: transform 200ms ease-in-out;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.read-dugme:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transform: scale(1.07);
+}
+
+.galerija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #dedede;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.galerija-dete {
+    width: 30%;
+    margin-top: 15px;
+    height: 300px;
+    position: relative;
+}
+
+.galerija-dete img {
+    width: 100%;
+    height: 100%;
+}
+
+.galerija-dete1 {
+    margin: 15px 15px 0 15px;
+}
+
+.hover-efekat {
+    position: absolute;
+    bottom: 100%;
+    opacity: 0.9;
+    left: 0;
+    right: 0;
+    background-color: #282727;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .25s ease;
+}
+
+.galerija-dete:hover .hover-efekat {
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.tekst {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.ga {
+    height: 350px;
+    width: 25%;
+}
+
+.ga2 {
+    margin: 15px 25px 0 25px;
+}
+
+.ga {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.tim-opis {
+    transition: .5s ease;
+    width: 93%;
+    height: 93%;
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+
+
+}
+
+.ga:hover .tim-opis {
+    opacity: 0.8;
+}
+
+.text-imena {
+    white-space: nowrap;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text-imena p {
+    font-size: 15px;
+    color: gray;
+}
+
+.social-media img {
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#na-pocetak {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: #282727;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#na-pocetak:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/*************** KONTAKT ******************/
+.google-map {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-map iframe {
+    width: 100%;
+    pointer-events: auto;
+    margin-bottom: 8px;
+}
+
+.bg3 {
+    margin: 0;
+    background-image: none;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 80px 80px 80px;
+    height: auto;
+}
+
+.bg4 {
+    height: 50vh;
+    background-image: url("img/slika6.jpg");
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nas-kontakt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    background-color: transparent;
+    color: black;
+}
+
+.kontakt-ikonica {
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+
+.kontakt-ikonica i {
+    font-size: 36px;
+    line-height: 1;
+    width: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kontakt-tekst {
+    display: inline-block;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+.kontakt-tekst h5 {
+    margin: 0 0 5px 0;
+    padding-top: 10px;
+}
+
+.nas-kontakt h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.nas-kontakt li {
+    margin-bottom: 20px;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: transparent;
+}
+
+
+.kontakt-ime {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#kontakt-dugme {
+    width: 80%;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.kontakt-poruka {
+    width: 80%;
+    height: 80px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: none;
+}
+
+#kontakt-dugme:hover {
+    background-color: #444444;
+}
+
+/************ABOUT US**************/
+.bg5 {
+    background-image: url("img/pozadina24.jpg");
+}
+
+.about-us-tekst {
+    width: 100%;
+    height: 40%;
+}
+
+
+/************SHOP**************/
+.bg6 {
+    background-image: url("img/pozadina25.jpg");
+}
+
+.slajder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slajder {
+    width: 80%;
+    height: 80vh;
+    /* margin-top: 20px; */
+}
+
+.sop {
+    margin-bottom: 30px;
+}
+
+.dugme-kupi {
+    width: 100px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(82, 82, 82);
+    transition: all 200ms ease-in-out;
+}
+
+.dugme-kupi:hover {
+    background-color: #dedede;
+    color: black;
+    cursor: pointer;
+}
+
+.prodavnica-dugmence {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.unuce-prodavnice {
+    height: 55%;
+    width: 100%;
+}
+
+.unuce-prodavnice img {
+    width: 100%;
+    height: 100%;
+}
+
+/******** footer **********/
+.footer {
+    height: 40vh;
+    border-bottom: none;
+    background-color: black;
+}
+
+.meni-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+    height: 100%;
+
+}
+
+.meni-footer ul {
+    color: white;
+    list-style: none;
+}
+
+.meni-footer li {
+    margin-right: 20px;
+    text-decoration: none;
+    display: inline;
+    transition: all 200ms;
+    color: white;
+}
+
+.meni-footer a {
+    list-style-type: none;
+    color: white;
+    transition: all 200ms;
+}
+
+.meni-footer a:hover {
+    color: #6b6b6b
+}
+
+.copy-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    color: white;
+    width: 30%;
+    height: 100%;
+}
+
+/*********** RESPONZIVA*************/
+.red {
+    flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+    .red {
+        flex-direction: column;
+    }
+
+    .naslovni-tekst h1 {
+        font-size: 70px;
+    }
+
+    .prica-tekst {
+        width: 80%;
+    }
+
+    .prica-tekst a {
+        color: rgb(92, 92, 92);
+
+    }
+
+    .servis-dete {
+        width: 80%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .servis-unuce {
+        height: 200px;
+    }
+
+    .servis-unuce-tekst {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 30px 0;
+    }
+
+    .servis-praunuce {
+        width: 70%;
+    }
+
+    .galerija-dete {
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .servis4 {
+        margin-bottom: 30px;
+    }
+
+    .nas-kontakt {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0 30px 0;
+    }
+
+    .nas-kontakt ul {
+        padding: 0;
+    }
+
+    .nas-kontakt li {
+        display: inline;
+    }
+
+    #drugi-li {
+        margin: 0 30px 0 30px;
+    }
+
+    .contact-us {
+        width: 80%;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .naslovni-tekst h1 {
+        font-size: 45px;
+    }
+
+    .naslovni-tekst h2 {
+        font-size: 18px;
+    }
+
+    .modal-glavni {
+        width: 80%;
+    }
+
+    /*******kontakt*****/
+    .bg3 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bg4 {
+        height: 30vh;
+    }
+
+
+    .contact-us {
+        width: 90%;
+        padding: 0;
+    }
+
+    .nas-kontakt {
+        width: 90%;
+        padding: 0;
+    }
+
+    .nas-kontakt li {
+        display: block;
+        margin-top: 20px;
+    }
+
+    #drugi-li {
+        margin: 0;
+    }
+
+    /* about us */
+    .about-us-tekst {
+        font-size: 14px;
+    }
+
+    /******footer******/
+
+    .footer {
+        height: 50vh;
+    }
+
+    .meni-footer li {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .meni-footer {
+        align-items: center;
+
+    }
+
+    .copy-footer {
+        width: 50%;
+    }
+
+
+}
+
+@media (max-width: 866px) {
+    .nas-kontakt li {
+        display: block;
+        margin-top: 20px;
+    }
+
+    #drugi-li {
+        margin: 0;
+    }
+
+    #slajder {
+        width: 80%;
+        height: 60vh;
+        /* margin-top: 20px; */
+    }
+}
+
+@media (max-width: 1000px) {
+    .glavni-levi-meni {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        float: right;
+
+    }
+
+    .logo img {
+        margin-right: 30px;
+    }
+
+    .dugme-meni {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .media-meni {
+        display: none;
+    }
+}
